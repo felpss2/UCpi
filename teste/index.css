@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cabecalho {
+
+    background-color: #45214A;
+    height: 100%;
+}
+
+
+.info {
+    height: 100%;
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    gap: 25px;
+    
+}
+
+.topicos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+main {
+    height: 1100px;
+    background: url("./img/show.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    padding-left: 20px;
+
+}
+
+.saiba {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    color: white;
+    height: 400px;
+    width: 700px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 20px;
+
+
+}
+
+h2 {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.709);
+}
+
+button {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;  
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    background-color: #45214A;
+    border-radius: 10px;
+}
+
+.texto {
+    
+    height: 50%;
+    width: 100%;
+    
+}
+
+.aulas{
+    height:400px ;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.aula{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height:280px;
+    width:300px;
+    background-color: #45214A;
+    border-radius: 7px;
+    text-align:center;
+    color: white;
+}
+
+footer{
+    height: 1200px;
+}
+
+.imagemaula{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+}
+
+
