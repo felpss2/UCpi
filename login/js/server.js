@@ -2,14 +2,21 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const app = express();
+const cors = require('cors');
+
+app.use(cors(/*{
+    origin: 'http://127.0.0.1:5500'
+}*/ ));
+
+
 app.use(bodyParser.json());
 
 // Conexão com o banco de dados
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'seu-usuario',
-    password: 'sua-senha',
-    database: 'login-banco'
+    user: 'root',
+    password: '',
+    database: 'login'
 });
 
 app.post('/login', (req, res) => {

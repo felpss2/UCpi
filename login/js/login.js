@@ -13,9 +13,9 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
 
     const messageElement = document.getElementById('message');
     if (response.ok) {
-        window.location.href = 'protected.html';
+        window.location.href = './protected.html';
     } else {
-        const errorMessage = await response.text();
+        const errorMessage = await response.text(alert("credenciais incorretas"));
         messageElement.textContent = errorMessage;
     }
 });

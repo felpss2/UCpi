@@ -14,24 +14,24 @@
 
   <main>
     <div class="login">
-      <form class="registerForm">
+      <form class="registerForm" id="registerForm">
         <h1>Registro</h1>
-        <input type="input" placeholder="Crie um nome de usuário">
+        <input type="input" id="usuário" placeholder="Crie um nome de usuário">
 
-        <input type="input2" placeholder="Crie uma senha">
+        <input type="input2" id="senha" placeholder="Crie uma senha">
 
-        <div class="botao">
+        <div class="botao" id="submit">
           <button>Registrar-se</button>
         </div>
         <a href="login.html">Já possui conta?</a>
+        <div id="message"></div>
+ </form>
 
       </div>
 
-
-
-    </div>
+   
   </main>
-
+   <script src="./js/register.js"></script>
 </body>
 
 </html>
