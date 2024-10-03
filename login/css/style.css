@@ -39,8 +39,8 @@ body {
     margin: 100px;
     font-family: "Montserrat";
     font-size: 25px;
-    
-    
+
+
 }
 
 .loginForm{
@@ -53,16 +53,16 @@ body {
     margin: 100px;
     font-family: "Montserrat";
     font-size: 25px;
-    
-    
+
+
 }
 
 .input{
-    
+
     margin: 20px;
     display: flex;
- 
-    
+
+
 }
 
 button{
@@ -70,9 +70,20 @@ button{
     align-self: end;
     justify-self: flex-end;
     width: 180px;
-    
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    border: 0;
+    height: 25px;
+
 }
 
 a{
     font-size: 10px;
+}
+
+input{
+    width: 172px;
+    margin: 5px;
+
 }
