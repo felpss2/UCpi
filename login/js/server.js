@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const app = express();
 const cors = require('cors');
+const bcrypt = require('bcrypt')
 
 app.use(cors(/*{
     origin: 'http://127.0.0.1:5500'
@@ -39,7 +40,7 @@ app.post('/register', (req, res) => {
     });
 });
 
-app.
+
 
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');

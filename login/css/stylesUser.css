@@ -6,12 +6,11 @@ body {
     place-items: center;
     margin: 0;
     padding: 0 24px;
-    background-image: url(/img/stacked-waves-haikei.svg);
+    background-image: url("../img/layered-waves-haikei.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Montserrat";
     color: #000;
-    animation: rotate 6s infinite alternate linear;
     justify-content: center;
     align-items: center;
 }
@@ -20,9 +19,9 @@ body {
 .login {
     display: flex;
     background-color: white;
-    height: 400px;
-    width: 400px;
-    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+    border-radius: 0px;
     align-items: start;
     justify-content: center;
     text-align: center;
@@ -57,10 +56,13 @@ body {
     
 }
 
-.input{
+input{
     
-    margin: 20px;
+    margin: 5px;
     display: flex;
+    height: 150px;
+    width: 299px;
+
  
     
 }
@@ -69,10 +71,16 @@ button{
     margin:10px;
     align-self: end;
     justify-self: flex-end;
-    width: 180px;
+    flex-direction: row;
+    width: 145px;
     
 }
 
 a{
     font-size: 10px;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
 }
