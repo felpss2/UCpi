@@ -1,7 +1,8 @@
 
 
 body {
-    height: 1000px;
+    height: 500px;
+    width: 100%;
     display: flex;
     place-items: center;
     margin: 0;
@@ -19,9 +20,9 @@ body {
 .login {
     display: flex;
     background-color: white;
-    height: 500px;
-    width: 500px;
-    border-radius: 0px;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
     align-items: start;
     justify-content: center;
     text-align: center;
@@ -38,8 +39,8 @@ body {
     margin: 100px;
     font-family: "Montserrat";
     font-size: 25px;
-    
-    
+
+
 }
 
 .loginForm{
@@ -52,19 +53,19 @@ body {
     margin: 100px;
     font-family: "Montserrat";
     font-size: 25px;
-    
-    
+
+
 }
 
 input{
-    
+
     margin: 5px;
     display: flex;
     height: 150px;
     width: 299px;
 
- 
-    
+
+
 }
 
 button{
@@ -73,7 +74,7 @@ button{
     justify-self: flex-end;
     flex-direction: row;
     width: 145px;
-    
+
 }
 
 a{

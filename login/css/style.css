@@ -1,7 +1,7 @@
 
 
 body {
-    height: 1000px;
+    height: 500px;
     display: flex;
     place-items: center;
     margin: 0;
@@ -20,12 +20,13 @@ body {
 .login {
     display: flex;
     background-color: white;
-    height: 500px;
-    width: 500px;
-    border-radius: 0px;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
     align-items: start;
     justify-content: center;
     text-align: center;
+
 
 }
 
@@ -41,11 +42,12 @@ body {
     font-size: 25px;
 
 
+
 }
 
 .loginForm{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items:center;
     justify-content: center;
     height: 100px;
@@ -68,7 +70,7 @@ body {
 button{
     margin:10px;
     align-self: end;
-    justify-self: flex-end;
+    justify-self: end;
     width: 180px;
     color: white;
     background-color: blue;
@@ -84,6 +86,7 @@ a{
 
 input{
     width: 172px;
+    height: 40px;
     margin: 5px;
 
 }

@@ -22,23 +22,46 @@ const db = mysql.createConnection({
 
 app.post('/login', (req, res) => {
     const { email, password } = req.body;
-    db.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, password], (err, results) => {
+
+    // Busca o usuário pelo email
+    db.query('SELECT * FROM users WHERE email = ?', [email], async (err, results) => {
         if (err) throw err;
+
         if (results.length > 0) {
-            res.sendStatus(200); // Login bem-sucedido
+            // Compara a senha fornecida com o hash armazenado no banco
+            const match = await bcrypt.compare(password, results[0].password);
+
+            if (match) {
+                res.sendStatus(200); // Login bem-sucedido
+            } else {
+                res.status(401).send('Credenciais inválidas');
+            }
         } else {
             res.status(401).send('Credenciais inválidas');
         }
     });
 });
 
-app.post('/register', (req, res) => {
+
+app.post('/register', async (req, res) => {
     const { email, password } = req.body;
-    db.query('INSERT INTO users (email, password) VALUES (?, ?)', [email, password], (err, result) => {
-        if (err) throw err;
-        res.sendStatus(201); // Usuário registrado com sucesso
-    });
+
+    try {
+        // Gera o hash da senha com um salt de 10 rounds
+        const  hashedPassword = await bcrypt.hash(password, 10);
+
+        // Insere o email e a senha criptografada no banco de dados
+        db.query('INSERT INTO users (email, password) VALUES (?, ?)', [email, hashedPassword], (err, result) => {
+            if (err) throw err;
+            res.sendStatus(201); // Usuário registrado com sucesso
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Erro ao registrar usuário');
+    }
 });
+
+
 
 
 

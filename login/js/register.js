@@ -21,3 +21,4 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
         messageElement.textContent = errorMessage;
     }
 });
+
